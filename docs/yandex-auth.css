@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+  padding: 32px 24px 48px;
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+}
+
+:root {
+  --text: #1f2937;
+  --muted: #6b7280;
+  --border: #e5e7eb;
+  --note-bg: #f6f8fa;
+  --warning-bg: #fff8e1;
+  --primary: #2563eb;
+  --warning: #f59e0b;
+  --match: #15803d;
+  --optional: #b45309;
+}
+
+.page {
+  position: relative;
+}
+
+.sidebar {
+  position: fixed;
+  top: 32px;
+  right: 32px;
+  width: 260px;
+  max-height: calc(100vh - 64px);
+  overflow-y: auto;
+  border-left: 2px solid #222;
+  padding: 0 0 0 14px;
+  background: transparent;
+  box-shadow: none;
+  z-index: 10;
+}
+
+.sidebar-title {
+  display: none;
+}
+
+.sidebar > * + * {
+  margin-top: 8px;
+}
+
+.sidebar-item {
+  margin: 0 0 10px;
+  font-size: 14px;
+  line-height: 1.45;
+  color: #6b7280;
+}
+
+.sidebar-item:last-child {
+  margin-bottom: 0;
+}
+
+.sidebar-item.current {
+  color: #222;
+}
+
+.sidebar a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.25;
+}
+
+.sidebar a:first-of-type {
+  color: #222;
+}
+
+.sidebar a:not(:first-of-type) {
+  color: #6b7280;
+}
+
+.sidebar a:hover {
+  color: var(--text);
+}
+
+.content {
+  max-width: calc(100% - 320px);
+  min-width: 0;
+}
+
+.two-column {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.two-column .text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.image-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.step-image,
+.image-row img {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: #fff;
+  width: 280px;
+  height: 280px;
+  object-fit: contain;
+}
+
+.note {
+  margin: 20px 0;
+  padding: 16px 18px;
+  border-left: 5px solid var(--primary);
+  border-radius: 12px;
+  background: var(--note-bg);
+}
+
+.note.warning {
+  border-left-color: var(--warning);
+  background: var(--warning-bg);
+}
+
+.note h4 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.uri-match {
+  color: var(--match);
+}
+
+.uri-optional {
+  color: var(--optional);
+}
+
+@media (max-width: 900px) {
+  .page {
+    position: static;
+  }
+
+  .sidebar {
+    position: static;
+    top: auto;
+    right: auto;
+    width: 100%;
+    max-width: none;
+    max-height: none;
+    overflow: visible;
+    border-left: 2px solid #222;
+    padding: 0 0 0 14px;
+    box-shadow: none;
+    z-index: auto;
+  }
+
+  .content {
+    max-width: none;
+  }
+
+  .step-image {
+    width: 280px;
+    height: 280px;
+  }
+}

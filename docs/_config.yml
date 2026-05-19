@@ -1,0 +1,12 @@
+title: "Инструкция — Яндекс ID OAuth"
+lang: ru
+description: "Создание приложения для авторизации пользователей с помощью Яндекс ID"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  parse_block_html: true
+
+# Собственная вёрстка и CSS, без темы Jekyll
+theme: null
