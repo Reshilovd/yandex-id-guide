@@ -163,12 +163,10 @@ title: Создание приложения для авторизации по�
 
 </div>
 
-<details>
-<summary><b>Полный список доступных данных и scopes</b></summary>
-
-<details>
+<details markdown="1">
+<summary markdown="span"><strong>Полный список доступных данных и scopes</strong></summary>
+<details markdown="1">
 <summary>🔐 Базовые данные пользователя (Login API)</summary>
-
 | Scope | Описание |
 | --- | --- |
 | `login:info` | Логин, имя, фамилия, пол |
@@ -179,12 +177,9 @@ title: Создание приложения для авторизации по�
 | `login:address.home_work.read` | Домашний и рабочий адрес |
 | `login:address.all.read` | Все адреса пользователя |
 | `login:promo_subscription` | Подписка на рекламные сообщения |
-
 </details>
-
-<details>
+<details markdown="1">
 <summary>☁️ Яндекс.Диск</summary>
-
 | Scope | Описание |
 | --- | --- |
 | `cloud_api:disk.read` | Чтение всего Диска |
@@ -192,23 +187,17 @@ title: Создание приложения для авторизации по�
 | `cloud_api:disk.info` | Информация о Диске |
 | `cloud_api:disk.app_folder` | Доступ к папке приложения |
 | `yadisk:disk` | Полный доступ к API Яндекс.Диска |
-
 </details>
-
-<details>
+<details markdown="1">
 <summary>✉️ Почта</summary>
-
 | Scope | Описание |
 | --- | --- |
 | `mail:imap_ro` | Чтение почты |
 | `mail:imap_full` | Чтение и удаление писем |
 | `mail:smtp` | Отправка почты через SMTP |
-
 </details>
-
-<details>
+<details markdown="1">
 <summary>📊 Метрика / AppMetrica / Audience</summary>
-
 | Scope | Описание |
 | --- | --- |
 | `metrika:read` | Чтение статистики Метрики |
@@ -221,12 +210,9 @@ title: Создание приложения для авторизации по�
 | `appmetrica:write` | Управление AppMetrica |
 | `audience:read` | Чтение сегментов |
 | `audience:write` | Управление сегментами |
-
 </details>
-
-<details>
+<details markdown="1">
 <summary>🌐 Вебмастер / SEO</summary>
-
 | Scope | Описание |
 | --- | --- |
 | `webmaster:hostinfo` | Внешние ссылки сайта |
@@ -234,12 +220,9 @@ title: Создание приложения для авторизации по�
 | `webmaster:turbopages` | Турбо-страницы |
 | `wordstat:api` | API Wordstat |
 | `suggest:read_web_history` | История поисковых запросов |
-
 </details>
-
-<details>
+<details markdown="1">
 <summary>📅 Календарь / Контакты / Коммуникации</summary>
-
 | Scope | Описание |
 | --- | --- |
 | `calendar:all` | Полный доступ к календарю |
@@ -250,12 +233,9 @@ title: Создание приложения для авторизации по�
 | `telemost-api:conferences.create` | Создание встреч |
 | `telemost-api:conferences.update` | Изменение встреч |
 | `telemost-api:conferences.delete` | Удаление встреч |
-
 </details>
-
-<details>
+<details markdown="1">
 <summary>🏢 Яндекс 360 / Организации</summary>
-
 | Scope | Описание |
 | --- | --- |
 | `directory:read_users` | Чтение сотрудников |
@@ -269,12 +249,9 @@ title: Создание приложения для авторизации по�
 | `directory:manage_dns` | Управление DNS |
 | `directory:read_organization` | Чтение организации |
 | `directory:write_organization` | Редактирование организации |
-
 </details>
-
-<details>
+<details markdown="1">
 <summary>🛡️ Безопасность Яндекс 360</summary>
-
 | Scope | Описание |
 | --- | --- |
 | `ya360_security:read_auditlog` | Чтение аудит-лога |
@@ -287,12 +264,9 @@ title: Создание приложения для авторизации по�
 | `ya360_security:domain_sessions_write` | Управление сессиями |
 | `ya360_security:domain_settings_read` | Чтение настроек безопасности |
 | `ya360_security:domain_settings_write` | Изменение настроек безопасности |
-
 </details>
-
-<details>
+<details markdown="1">
 <summary>📬 Администрирование почты Яндекс 360</summary>
-
 | Scope | Описание |
 | --- | --- |
 | `ya360_admin:mail_read_user_settings` | Чтение настроек почты |
@@ -303,43 +277,31 @@ title: Создание приложения для авторизации по�
 | `ya360_admin:mail_write_domain_routes` | Управление маршрутизацией |
 | `ya360_admin:mail_read_antispam_settings` | Чтение антиспама |
 | `ya360_admin:mail_write_antispam_settings` | Управление антиспамом |
-
 </details>
-
-<details>
+<details markdown="1">
 <summary>💳 Финансы / Оплата</summary>
-
 | Scope | Описание |
 | --- | --- |
 | `yandexpay:all` | Оплата через Yandex Pay |
 | `yandexpay:merchant-api` | Управление заказами |
 | `split:api` | Оплата частями |
-
 </details>
-
-<details>
+<details markdown="1">
 <summary>🚚 Доставка / Логистика</summary>
-
 | Scope | Описание |
 | --- | --- |
 | `delivery:partner-api` | API Яндекс.Доставки |
 | `courier:logistician` | Курьеры и заказы |
-
 </details>
-
-<details>
+<details markdown="1">
 <summary>🤖 IoT / Умный дом</summary>
-
 | Scope | Описание |
 | --- | --- |
 | `iot:view` | Просмотр устройств |
 | `iot:control` | Управление устройствами |
-
 </details>
-
-<details>
+<details markdown="1">
 <summary>📚 Wiki / Tracker / Forms</summary>
-
 | Scope | Описание |
 | --- | --- |
 | `wiki:read` | Чтение Wiki |
@@ -348,12 +310,9 @@ title: Создание приложения для авторизации по�
 | `tracker:write` | Запись в Tracker |
 | `forms:read` | Просмотр форм |
 | `forms:write` | Управление формами |
-
 </details>
-
-<details>
+<details markdown="1">
 <summary>📢 Реклама / Маркетинг / Ads</summary>
-
 | Scope | Описание |
 | --- | --- |
 | `direct:api` | API Яндекс.Директа |
@@ -363,22 +322,16 @@ title: Создание приложения для авторизации по�
 | `partner_office:advmarkup` | Маркировка рекламы |
 | `market:partner-api` | API Яндекс.Маркета |
 | `products:partner-api` | Поиск товаров |
-
 </details>
-
-<details>
+<details markdown="1">
 <summary>🧠 AI / Нейросети</summary>
-
 | Scope | Описание |
 | --- | --- |
 | `masterpiecer:all` | API Шедеврум |
 | `neuro-expert:all` | Нейроэксперт |
-
 </details>
-
-<details>
+<details markdown="1">
 <summary>🚴 Прочее</summary>
-
 | Scope | Описание |
 | --- | --- |
 | `maps:public_bookmarks` | Закладки карт |
@@ -387,11 +340,8 @@ title: Создание приложения для авторизации по�
 | `tv:use` | Телепрограмма |
 | `cid:use` | Яндекс.АОН |
 | `cloud:auth` | Аутентификация в Облаке |
-
 </details>
-
 </details>
-
 
 <h2 id="step-7">Шаг 7. Завершение регистрации</h2>
 

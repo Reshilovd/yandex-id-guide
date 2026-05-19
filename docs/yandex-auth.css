@@ -140,6 +140,45 @@ body {
   color: var(--optional);
 }
 
+details {
+  margin: 12px 0;
+  padding: 0 0 0 8px;
+  border-left: 2px solid var(--border);
+}
+
+details details {
+  margin-left: 12px;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: 600;
+  padding: 4px 0;
+}
+
+details[open] > summary {
+  margin-bottom: 8px;
+}
+
+details table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 8px 0 12px;
+  font-size: 14px;
+}
+
+details th,
+details td {
+  border: 1px solid var(--border);
+  padding: 8px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+
+details th {
+  background: var(--note-bg);
+}
+
 @media (max-width: 900px) {
   .page {
     position: static;
