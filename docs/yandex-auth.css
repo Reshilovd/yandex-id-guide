@@ -146,8 +146,12 @@ details {
   border-left: 2px solid var(--border);
 }
 
-details details {
-  margin-left: 12px;
+.scopes-list details {
+  margin: 10px 0 10px 12px;
+}
+
+.scopes-outer > summary {
+  margin-bottom: 4px;
 }
 
 summary {
